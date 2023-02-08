@@ -34,6 +34,10 @@ func main() {
 		return c.JSON(http.StatusOK, "Welcome to Toothless Tarantula BlitzTracker API!")
 	})
 
+	//all function handlers goes here
+	//init db
+	// DB := db.Init()
+
 	// Start server
 	go func() {
 		if err := e.Start(":" + env.PORT); err != nil && err != http.ErrServerClosed {
